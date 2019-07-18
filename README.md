@@ -19,19 +19,19 @@ The heuristics that I used in the algorithm is :
 The list is not strictly unchangable, other honorable mentions for the heuristics that i have not implemented can be *Address format* Heuristics 
 and as this is an open project , feel free to make your own heuristics and play around with it
 
-##1. Multi Input
+**1. Multi Input**
 
 Most papers include the heuristics **_Multi input_** which says *if 2 or more addresses is an input in one same transaction, 
 it is safe to assume that the 2 addresses belong to the same wallet*, but due to the wallets advancements such as coinjoin transaction, 
 this heuristics can easily become irrelevant
 
-##2. Shadow
+**2. Shadow**
 
 Some papers also include the **_Shadow heuristics_** which says *if the time of the earliest transaction of an address is very close to the time of the 
 transaction, then it is considered as shadow address* 
 i.e. belongs to the same entity the shadow address needs to be an output
 
-##3. Change
+**3. Change**
 
 **_Change Heuristics_** also is one of the most popular heuristics out there. It says that if *minimum value of an output is smaller than the minimum of the 
 input then that output is a change address* (i.e. belongs to the same entity)
@@ -41,4 +41,11 @@ we also added an extra limit for the number of outputs, otherwise it can output 
 ## Dependencies:
 	-Blockchain API(No need to install)
 	-networkx (for visualization)
+	-python3 (Have not tested for python2)
+
+## Practical tutorial
+
+1.
+
+
 
