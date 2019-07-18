@@ -12,6 +12,7 @@ whether 2 addresses are owned or derived from the same wallet. These characteris
 and can determine from the addresses that took part in this transaction which are change addresses and which are actual recipients addresses.
 
 The heuristics that I used in the algorithm is :
+
 	-*Multi-input heuristics*
 	-*Shadow heuristics*
 	-*Change heuristics*
@@ -45,7 +46,16 @@ we also added an extra limit for the number of outputs, otherwise it can output 
 
 ## Practical tutorial
 
-1.
+# 1.Installation
+
+Installing this shouldn't be hard, you **do not** need to install blockchain in your pyhton since we have a copy of the api in the repo. 
+I did this because the full blockchain API has other features such as wallets, createwallet, exchangerates, etc. which are not really useful for 
+our goal. Do refer to the blockexplorer api from blockchain [documentation](https://github.com/blockchain/api-v1-client-python/blob/master/docs/blockexplorer.md)
+for some of the notation we will use or if you want to go deeper into the code.
+with that being said, all you left to do is to fork this repo and make sure you have python networkx library for the visualization which should already be
+in the python package.
+
+# 2.
 
 
 
