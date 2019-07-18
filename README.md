@@ -95,7 +95,7 @@ comes before and after that .
 However, the transaction network is not a linear graph instead think of it as a 2D directed graph with every node represents
 addresses *(not wallets!)*.
 
-![alt block](https://github.com/Nicholas-t/Cryptio/blob/master/image/block.png) ![alt trans](https://github.com/Nicholas-t/Cryptio/blob/master/image/trans.PNG)
+![alt block](https://github.com/Nicholas-t/Cryptio/blob/master/image/block.png)                      ![alt trans](https://github.com/Nicholas-t/Cryptio/blob/master/image/trans.PNG)
 
 
 
