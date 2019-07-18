@@ -13,7 +13,7 @@ source all : bp_petkanic
 
 
 from Bitcoin_address_suggester.blockchain_API import blockexplorer as blk
-import Bitcoin_address_suggester.heuristics
+import Bitcoin_address_suggester.heuristics as heuristics
 import csv
 
 

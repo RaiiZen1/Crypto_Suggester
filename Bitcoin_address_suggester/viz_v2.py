@@ -9,11 +9,13 @@ network visualizing with bfs
 """
 
 import networkx as nx
-from blockchain_API import blockexplorer as blk
+from Bitcoin_address_suggester.blockchain_API import blockexplorer as blk
+
+
+"""
 import csv
 import pandas as pd
 
-"""
 users = {}
 
 def get_email(id_):
@@ -80,7 +82,7 @@ def rem_dup_and_addr(lis, addr):
             new_lis+=[l]
     return new_lis
 
-def get_details_from_address(address):
+def get_details_from_address(address , addresses):
     """
     return edges, labels, nodes on a format of NetworkX
     """
@@ -128,24 +130,24 @@ def next_depth(addr):
     except:
         return []
     
-    
-def plot_from_first(addr, d=4):
+
+
+def plot_from_first(addr, addresses=[],depth_max=4, lab = False):
     print('First address is {}'.format(addr))
     current =[addr]
     G = nx.DiGraph()
     G.add_nodes_from(current)
     depth = 0
-    while (depth<d) and len(G.nodes())<100: 
+    while (depth<depth_max) and len(G.nodes())<100: 
         next_depth_list = []
         for each_addr in current:
             next_depth_list += next_depth(each_addr)
             try:
-                edges, labels, nodes = get_details_from_address(each_addr)
+                edges, labels, nodes = get_details_from_address(each_addr, addresses)
                 G.add_nodes_from(nodes)
                 G.add_edges_from(edges)
-                print(depth)
             except:
-                print('enter')
+                print('Failed to get details for {}'.format(each_addr))
                 pass
         current = next_depth_list
         depth += 1
@@ -161,6 +163,8 @@ def plot_from_first(addr, d=4):
             colors += ['r']
     pos = nx.spring_layout(G,k=0.5,iterations=20)
     nx.draw(G, pos, node_color=colors, 
-                                with_labels=False, alpha = 0.5)
+                                with_labels=lab, alpha = 0.5)
+    
+
     
 

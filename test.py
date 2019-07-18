@@ -11,11 +11,21 @@ import Bitcoin_address_suggester.viz_v2 as viz
 
 #antoine's xpub address for testing
 
-addresses=['32e3ns2dTfx5ogMYhm5UPnqsUYvu2vHGJp',    #First
-           '3HsVXJadDZFRwQCfVFNHeornRkmZaVcDzP',    #OK
+
+addresses=['32e3ns2dTfx5ogMYhm5UPnqsUYvu2vHGJp',    #OK
+           '3HsVXJadDZFRwQCfVFNHeornRkmZaVcDzP',
            '37ASdZj1gC3qKS1vLMLDQS2MdZTdYN1Kbi',
            '3GARffqjDk5LgfCUhx3L6nCk7dVEwEPUaN']
 
+addresses = ['3LoynermEyTjSx6aFTSVCCcu1CjHgHD6B8', #A
+              '3GMBMYvQBJ5VJkHxYmsGnhZEvgGSfHX14v', #B
+              '14RSprohFSLf6jud6ghW4ckhg5Jx5NaSzF', #A first
+              '14ct44kH5yVPdvCkZMPtCEyhZiuWRmfSys'] #B first
+
+addresses = ['1KfbMRm3RaNgST7aDCDxdxUH9coNxoxsTx',  #B
+  '15samGwmfwYobjxRi6akvKWDUhLVjJjUnF',#A
+  '19Em3MS2PggEoEzUhyWbh6hycFAzTFCYm8', #A
+  '1KTMbDyDANDT9FDzsxuDn4tMo6omJf6Vt7']#A first
     
-print(sgstr.suggest('32e3ns2dTfx5ogMYhm5UPnqsUYvu2vHGJp'))
-viz.plot_from_first('32e3ns2dTfx5ogMYhm5UPnqsUYvu2vHGJp')
+addresses = sgstr.suggest('1KTMbDyDANDT9FDzsxuDn4tMo6omJf6Vt7').keys()
+viz.plot_from_first('1KTMbDyDANDT9FDzsxuDn4tMo6omJf6Vt7', addresses)
