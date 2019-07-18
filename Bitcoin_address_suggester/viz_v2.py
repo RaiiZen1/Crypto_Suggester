@@ -162,8 +162,7 @@ def plot_from_first(addr, addresses=[],depth_max=4, lab = False):
         else:
             colors += ['r']
     pos = nx.spring_layout(G,k=0.5,iterations=20)
-    nx.draw(G, pos, node_color=colors, 
-                                with_labels=lab, alpha = 0.5)
+    nx.draw(G, pos, node_color=colors, with_labels=lab, alpha = 0.5)
     
 
     
