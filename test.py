@@ -4,7 +4,7 @@ Created on Thu Jul 18 11:08:41 2019
 
 @author: Admin
 """
-
+"""
 import Bitcoin_address_suggester.get_possible_addr as sgstr
 import Bitcoin_address_suggester.viz_v2 as viz
 
@@ -28,4 +28,9 @@ addresses = ['1KfbMRm3RaNgST7aDCDxdxUH9coNxoxsTx',  #B
   '1KTMbDyDANDT9FDzsxuDn4tMo6omJf6Vt7']#A first
     
 addresses = sgstr.suggest('1KTMbDyDANDT9FDzsxuDn4tMo6omJf6Vt7').keys()
-viz.plot_from_first('1KTMbDyDANDT9FDzsxuDn4tMo6omJf6Vt7', addresses)
+viz.plot_from_first('1KTMbDyDANDT9FDzsxuDn4tMo6omJf6Vt7', addresses)"""
+import Bitcoin_address_suggester.get_possible_addr as sgstr
+
+addresses = sgstr.suggest('1KTMbDyDANDT9FDzsxuDn4tMo6omJf6Vt7')
+print('addresses = ',addresses)
+print('Possible addresses are ',list(addresses.keys()))
