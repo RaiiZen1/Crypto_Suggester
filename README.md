@@ -88,13 +88,14 @@ Possible addresses are  ['1H5FB4fDZWM4fbLWS1uj9yNkV2kQyvHR9V',
 ```
 
 ## 3.Vizualize transactions
-![alt block](https://github.com/Nicholas-t/Cryptio/blob/master/image/block.png){:style="float: right;margin-right: 7px;"}
+
 If we take a look at the bitcoin blockchain network it self, it is more like an ordered linear network where every block is only related to the block that 
 comes before and after that . 
 
 However, the transaction network is not a linear graph instead think of it as a 2D directed graph with every node represents
-addresses *(not wallets!)*.![alt trans](https://github.com/Nicholas-t/Cryptio/blob/master/image/trans.PNG){:style="float: left;margin-left: 5px;"}
+addresses *(not wallets!)*.
 
+![alt block](https://github.com/Nicholas-t/Cryptio/blob/master/image/block.png) ![alt trans](https://github.com/Nicholas-t/Cryptio/blob/master/image/trans.PNG)
 
 
 
