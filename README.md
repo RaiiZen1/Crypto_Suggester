@@ -48,7 +48,7 @@ we also added an extra limit for the number of outputs, otherwise it can output 
 
 ## 1.Installation
 
-<img align="right" width="200" height="100" src="https://github.com/Nicholas-t/Cryptio/blob/master/images/bc.PNG">
+<img align="right" width="200" height="100" src="images/bc.PNG">
 
 Installing this shouldn't be hard, you **do not** need to install blockchain in your pyhton since we have a copy of the api in the repo. 
 I did this because the full blockchain API has other features such as wallets, createwallet, exchangerates, etc. which are not really useful for 
@@ -97,7 +97,7 @@ comes before and after that .
 However, the transaction network is not a linear graph instead think of it as a 2D directed graph with every node represents
 addresses *(not wallets!)*.
 
-![alt block](image/block.png)  ![alt trans](image/trans.PNG)
+![alt block](images/block.png)  ![alt trans](images/trans.PNG)
 
 Thus we can see that being able to visualize the transaction network is a useful tool for us, especially combined with the suggesting algorithm we can
 clearly analyze the wallets behaviour.
