@@ -97,7 +97,7 @@ comes before and after that .
 However, the transaction network is not a linear graph instead think of it as a 2D directed graph with every node represents
 addresses *(not wallets!)*.
 
-![alt block](https://github.com/Nicholas-t/Cryptio/blob/master/image/block.png)  ![alt trans](https://github.com/Nicholas-t/Cryptio/blob/master/image/trans.PNG)
+![alt block](image/block.png)  ![alt trans](image/trans.PNG)
 
 Thus we can see that being able to visualize the transaction network is a useful tool for us, especially combined with the suggesting algorithm we can
 clearly analyze the wallets behaviour.
@@ -119,7 +119,7 @@ viz.plot_from_first('1KTMbDyDANDT9FDzsxuDn4tMo6omJf6Vt7', addresses) #addresses 
 ```
 which returns 
 
-![alt block](https://github.com/Nicholas-t/Cryptio/blob/master/images/res.png)
+![alt block](images/res.png)
 
 if we just want to visualize without ditinguishing the addresses behaviour we can just run
 ```
@@ -127,7 +127,7 @@ viz.plot_from_first('1KTMbDyDANDT9FDzsxuDn4tMo6omJf6Vt7')
 ```
 which returns
 
-![alt block](https://github.com/Nicholas-t/Cryptio/blob/master/images/res2.png)
+![alt block](images/res2.png)
 
 *The arrow goes from the sender to the receiver*
 
