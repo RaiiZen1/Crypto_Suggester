@@ -48,7 +48,7 @@ we also added an extra limit for the number of outputs, otherwise it can output 
 
 ## 1.Installation
 
-<img align="right" width="200" height="100" src="https://github.com/Nicholas-t/Cryptio/blob/master/images/bc.PNG">
+<img align="right" width="200" height="100" src="images/bc.PNG">
 
 Installing this shouldn't be hard, you **do not** need to install blockchain in your pyhton since we have a copy of the api in the repo. 
 I did this because the full blockchain API has other features such as wallets, createwallet, exchangerates, etc. which are not really useful for 
@@ -97,7 +97,7 @@ comes before and after that .
 However, the transaction network is not a linear graph instead think of it as a 2D directed graph with every node represents
 addresses *(not wallets!)*.
 
-![alt block](https://github.com/Nicholas-t/Cryptio/blob/master/image/block.png)  ![alt trans](https://github.com/Nicholas-t/Cryptio/blob/master/image/trans.PNG)
+![alt block](images/block.png)  ![alt trans](images/trans.PNG)
 
 Thus we can see that being able to visualize the transaction network is a useful tool for us, especially combined with the suggesting algorithm we can
 clearly analyze the wallets behaviour.
@@ -119,7 +119,7 @@ viz.plot_from_first('1KTMbDyDANDT9FDzsxuDn4tMo6omJf6Vt7', addresses) #addresses 
 ```
 which returns 
 
-![alt block](https://github.com/Nicholas-t/Cryptio/blob/master/images/res.png)
+![alt block](images/res.png)
 
 if we just want to visualize without ditinguishing the addresses behaviour we can just run
 ```
@@ -127,7 +127,7 @@ viz.plot_from_first('1KTMbDyDANDT9FDzsxuDn4tMo6omJf6Vt7')
 ```
 which returns
 
-![alt block](https://github.com/Nicholas-t/Cryptio/blob/master/images/res2.png)
+![alt block](images/res2.png)
 
 *The arrow goes from the sender to the receiver*
 
