@@ -15,9 +15,10 @@ addresses=['32e3ns2dTfx5ogMYhm5UPnqsUYvu2vHGJp',    #OK
            '3HsVXJadDZFRwQCfVFNHeornRkmZaVcDzP',
            '37ASdZj1gC3qKS1vLMLDQS2MdZTdYN1Kbi',
            '3GARffqjDk5LgfCUhx3L6nCk7dVEwEPUaN']
-    
-#addresses = sgstr.suggest('1KTMbDyDANDT9FDzsxuDn4tMo6omJf6Vt7').keys()
-viz.plot_from_first('32e3ns2dTfx5ogMYhm5UPnqsUYvu2vHGJp', addresses)
+
+addresses = sgstr.suggest('1KTMbDyDANDT9FDzsxuDn4tMo6omJf6Vt7').keys()
+print(addresses)
+#viz.plot_from_first('32e3ns2dTfx5ogMYhm5UPnqsUYvu2vHGJp', addresses)
 
 """
 chances of errors:

@@ -10,7 +10,7 @@ network visualizing with bfs
 
 import networkx as nx
 from Bitcoin_address_suggester.blockchain_API import blockexplorer as blk
-
+import matplotlib.pyplot as plt
 
 """
 import csv
@@ -162,8 +162,10 @@ def plot_from_first(addr, addresses=[],depth_max=4, lab = False):
         else:
             colors += ['r']
     pos = nx.spring_layout(G,k=0.5,iterations=20)
+    fig = plt.figure()
     nx.draw(G, pos, node_color=colors, with_labels=lab, alpha = 0.5)
-    
-
-    
+    plt.show()
+    print('done')
+    plt.savefig('graph.png')
+    print('saved')
 
