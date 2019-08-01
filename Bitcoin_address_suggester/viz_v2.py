@@ -133,7 +133,6 @@ def plot_from_first(addr, addresses=[],depth_max=4, lab = False):
     G.add_nodes_from(addresses)
     colors = []
     for node in G.nodes():
-        print(node)
         if node == addr:
             colors += ['g']
         elif node in addresses:
