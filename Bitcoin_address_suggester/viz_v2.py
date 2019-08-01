@@ -12,29 +12,7 @@ import networkx as nx
 from Bitcoin_address_suggester.blockchain_API import blockexplorer as blk
 import matplotlib.pyplot as plt
 
-"""
-import csv
-import pandas as pd
 
-users = {}
-
-def get_email(id_):
-    ""
-    given an ID get the email of that person
-    ""
-    return emails[int(id_)]
-    
-
-with open('user-address.csv', newline='') as cs:
-    reader = csv.DictReader(cs)
-    df = pd.read_csv('user-email.csv')
-    emails = pd.Series(df.email.values,index=df.id).to_dict()
-    for row in reader:
-        if 'antoine' not in get_email(row['id_user']) and 'emile' not in get_email(row['id_user']): #for test
-            if row['id_user'] not in users.keys():
-                users[row['id_user']] = [row['address']]
-            else:
-                users[row['id_user']] += [row['address']]"""
                 
 #---------------------
 
@@ -155,6 +133,7 @@ def plot_from_first(addr, addresses=[],depth_max=4, lab = False):
     G.add_nodes_from(addresses)
     colors = []
     for node in G.nodes():
+        print(node)
         if node == addr:
             colors += ['g']
         elif node in addresses:
@@ -164,8 +143,9 @@ def plot_from_first(addr, addresses=[],depth_max=4, lab = False):
     pos = nx.spring_layout(G,k=0.5,iterations=20)
     fig = plt.figure()
     nx.draw(G, pos, node_color=colors, with_labels=lab, alpha = 0.5)
-    plt.show()
-    print('done')
     plt.savefig('graph.png')
     print('saved')
+    plt.show()
+    print('done')
+
 
