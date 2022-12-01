@@ -11,15 +11,14 @@ import Bitcoin_address_suggester.viz_v2 as viz
 
 #antoine's address for testing
 
-addresses=['32e3ns2dTfx5ogMYhm5UPnqsUYvu2vHGJp',    #OK
-           '3HsVXJadDZFRwQCfVFNHeornRkmZaVcDzP',
-           '37ASdZj1gC3qKS1vLMLDQS2MdZTdYN1Kbi',
-           '3GARffqjDk5LgfCUhx3L6nCk7dVEwEPUaN']
+addresses=[]
  
-suggested_addresses = sgstr.suggest('3QQdfAaPhP1YqLYMBS59BqWjcpXjXVP1wi').keys()
-print(suggested_addresses)
+addresses = sgstr.suggest('3QQdfAaPhP1YqLYMBS59BqWjcpXjXVP1wi')
 
-viz.plot_from_first('3QQdfAaPhP1YqLYMBS59BqWjcpXjXVP1wi', suggested_addresses)
+print('addresses = ',addresses)
+print('Possible addresses are ',list(addresses.keys()))
+
+viz.plot_from_first('3QQdfAaPhP1YqLYMBS59BqWjcpXjXVP1wi', addresses)
 
 
 """
