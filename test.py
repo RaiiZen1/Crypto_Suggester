@@ -16,10 +16,10 @@ addresses=['32e3ns2dTfx5ogMYhm5UPnqsUYvu2vHGJp',    #OK
            '37ASdZj1gC3qKS1vLMLDQS2MdZTdYN1Kbi',
            '3GARffqjDk5LgfCUhx3L6nCk7dVEwEPUaN']
  
-suggested_addresses = sgstr.suggest('32e3ns2dTfx5ogMYhm5UPnqsUYvu2vHGJp').keys()
+suggested_addresses = sgstr.suggest('3QQdfAaPhP1YqLYMBS59BqWjcpXjXVP1wi').keys()
 print(suggested_addresses)
 
-viz.plot_from_first('32e3ns2dTfx5ogMYhm5UPnqsUYvu2vHGJp', addresses)
+viz.plot_from_first('3QQdfAaPhP1YqLYMBS59BqWjcpXjXVP1wi', suggeested_addresses)
 
 
 """
