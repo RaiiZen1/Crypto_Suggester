@@ -19,7 +19,7 @@ addresses=['32e3ns2dTfx5ogMYhm5UPnqsUYvu2vHGJp',    #OK
 suggested_addresses = sgstr.suggest('3QQdfAaPhP1YqLYMBS59BqWjcpXjXVP1wi').keys()
 print(suggested_addresses)
 
-viz.plot_from_first('3QQdfAaPhP1YqLYMBS59BqWjcpXjXVP1wi', suggeested_addresses)
+viz.plot_from_first('3QQdfAaPhP1YqLYMBS59BqWjcpXjXVP1wi', suggested_addresses)
 
 
 """
